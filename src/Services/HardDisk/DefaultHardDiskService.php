@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Laravel\Probe\Services;
+namespace Laravel\Probe\Services\HardDisk;
 
 /**
  * @author Adam Ibnu <adamibnu157@gmail.com>

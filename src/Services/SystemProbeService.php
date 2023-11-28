@@ -4,6 +4,12 @@ declare(strict_types=1);
 
 namespace Laravel\Probe\Services;
 
+use Laravel\Probe\Services\Cpu\CpuUsageService;
+use Laravel\Probe\Services\HardDisk\HardDiskService;
+use Laravel\Probe\Services\Memory\MemoryUsageService;
+use Laravel\Probe\Services\Network\NetworkService;
+use Laravel\Probe\Services\WebServer\WebServerService;
+
 /**
  * @author Adam Ibnu <adamibnu157@gmail.com>
  */
