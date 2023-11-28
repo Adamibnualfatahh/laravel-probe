@@ -10,5 +10,4 @@ namespace Laravel\Probe\Services\HardDisk;
 interface HardDiskService
 {
     public function getHardDiskUsage(): string;
-
 }

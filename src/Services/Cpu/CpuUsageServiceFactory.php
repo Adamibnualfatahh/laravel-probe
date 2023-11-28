@@ -14,16 +14,21 @@ class CpuUsageServiceFactory
      */
     public static function create(): CpuUsageService|null
     {
-         $os = strtoupper(substr(PHP_OS, 0, 3));
+        $os = strtoupper(substr(PHP_OS, 0, 3));
 
-        if ($os === 'LIN') {
-            return new LinuxCpuUsageService();
-        } elseif ($os === 'DAR') {
-            return new MacCpuUsageService();
-        } elseif ($os === 'WIN') {
-            return new WindowsCpuUsageService();
-        } else {
-            return null;
+        switch ($os) {
+            case 'LIN':
+                return new LinuxCpuUsageService();
+                break;
+            case 'DAR':
+                return new MacCpuUsageService();
+                break;
+            case 'WIN':
+                return new WindowsCpuUsageService();
+                break;
+            default:
+                return null;
+                break;
         }
     }
 

@@ -12,8 +12,7 @@ class DefaultHardDiskService implements HardDiskService
 
     public function getHardDiskUsage(): string
     {
-        $freeSpaceBytes = disk_free_space("/");
-        $freeSpaceMB = $freeSpaceBytes / (1024 * 1024);
-        return number_format($freeSpaceMB, 2) . ' MB';
+        $freeSpace = disk_free_space("/") / (1024 * 1024);
+        return number_format($freeSpace, 2) . ' MB';
     }
 }
