@@ -15,7 +15,7 @@ class WindowsCpuUsageService implements CpuUsageService
         $process = @popen('wmic cpu get loadpercentage', 'rb');
 
         if ($process !== false) {
-            fgets($process); // Skip header
+            fgets($process);
             $cpuUsage = (int)fgets($process);
             pclose($process);
 
