@@ -1,0 +1,19 @@
+{
+    "name": "laravel/probe",
+    "description": "\"Laravel Probe: Easily monitor CPU, memory, storage, web server, and network connections in your Laravel applications. Gain insights into system performance and enhance your app's efficiency. Quick integration for seamless resource tracking.\"",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Probe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "adamibnu",
+            "email": "adamibnu157@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
