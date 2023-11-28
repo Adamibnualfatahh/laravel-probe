@@ -12,7 +12,7 @@ composer require laravel-probe/probe
 ## Integration
 After installing the package, add the following line to the providers array in your config/app.php file:
 ```bash
-'Laravel\Probe\ProbeServiceProvider::class',
+Laravel\Probe\ProbeServiceProvider::class,
 ```
 
 ## Usage
