@@ -1,5 +1,5 @@
 {
-    "name": "laravel/probe",
+    "name": "laravel-probe/probe",
     "description": "\"Laravel Probe: Easily monitor CPU, memory, storage, web server, and network connections in your Laravel applications. Gain insights into system performance and enhance your app's efficiency. Quick integration for seamless resource tracking.\"",
     "keywords": [
         "laravel", "probe", "monitoring", "cpu", "memory", "storage", "web server", "network connections", "system performance", "resource tracking"
